@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --main-color: #f69906;
+}
+
+body{
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    place-content: center;
+}
+
+.calculator{
+    max-width: auto;
+    height: auto;
+    background: #313131;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5rem;
+    padding-bottom: 20px;
+    border-radius: .3rem;
+    border: none;
+    box-shadow: 18px 15px 22px -2px rgba(0,0,0,0.4);
+    /* box-shadow: 19px 19px 37px 7px rgba(0,0,0,0.4); */
+}
+
+.screen{
+ max-width: auto ;
+ height: 100px;
+ background: #7a9677;
+ margin-bottom: 20px;
+ border-radius: .3rem;
+ font-family: 'Alumni Sans Pinstripe', sans-serif;
+ outline: none;
+ text-align: right;
+ padding: 10px;
+ color: #000;
+ font-size: 2rem;
+ font-weight: 900;
+ pointer-events: none;
+ box-shadow: inset 18px 15px 22px -2px rgba(0,0,0,0.4);
+}
+
+input::placeholder{
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+    color: #000;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button{
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+    border-radius: .3rem;
+    border: none;
+    box-shadow: 18px 15px 22px -2px rgba(0,0,0,0.4);
+}
+
+.btn-yellow{
+    background: var(--main-color);
+}
+
+.btn-grey{
+    background: #96979c;
+}
+
+.btn-equal{
+    background: #fff;
+    width: 120px;
+    grid-column: span 2;
+}
+
+
+.btn-percent{
+    background: #fff;
+}
+
+.btn-clear{
+    background: #ad1614;
+}

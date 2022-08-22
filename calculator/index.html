@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+
+        <input type="text" class="screen">
+
+        <div class="buttons">
+
+            <button  onclick="calculate('+')" type="button" class="btn btn-yellow">+</button>
+            <button  onclick="calculate('-')" type="button" class="btn btn-yellow">-</button>
+            <button  onclick="calculate('*')" type="button" class="btn btn-yellow">*</button>
+            <button  onclick="calculate('/')" type="button" class="btn btn-yellow">/</button>
+
+
+            <button  onclick="calculate(9)" type="button" class="btn btn-grey">9</button>
+            <button  onclick="calculate(8)" type="button" class="btn btn-grey">8</button>
+            <button  onclick="calculate(7)" type="button" class="btn btn-grey">7</button>
+            <button  onclick="calculate(6)" type="button" class="btn btn-grey">6</button>
+            <button  onclick="calculate(5)" type="button" class="btn btn-grey">5</button>
+            <button  onclick="calculate(4)" type="button" class="btn btn-grey">4</button>
+            <button  onclick="calculate(3)" type="button" class="btn btn-grey">3</button>
+            <button  onclick="calculate(2)" type="button" class="btn btn-grey">2</button>
+            <button  onclick="calculate(1)" type="button" class="btn btn-grey">1</button>
+            <button  onclick="calculate(0)" type="button" class="btn btn-grey">0</button>
+            <button  onclick="calculate('.')" type="button" class="btn btn-grey">.</button>
+
+            <button  onclick="calculate('%')" type="button" class="btn btn-percent">%</button>
+            <button  onclick="clr()" type="button" class="btn btn-clear">c</button>
+            <button  onclick="del()" type="button" class="btn btn-clear">DEL</button>
+            <button  onclick="result()" type="button" class="btn btn-equal span">=</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
