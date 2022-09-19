@@ -20,3 +20,4 @@ function clr(){
 function del(){
     screen.value = screen.value.slice(0, -1);
 }
+
